@@ -1,5 +1,6 @@
 import { EmbedType, UrlOptions, ActionableOptions } from '../../base'
 import { buildIframeSrc } from '../build-iframe-src'
+import { setupGoogleAnalyticsInstanceSharingFeature } from '../'
 
 import { generateEmbedId } from './generate-embed-id'
 import { getFormReadyHandler, getFormQuestionChangedHandler, getFormSubmitHandler } from './get-form-event-handler'
@@ -18,6 +19,13 @@ export const createIframe = (formId: string, type: EmbedType, options: CreateIfr
   window.addEventListener('message', getFormQuestionChangedHandler(embedId, options))
   window.addEventListener('message', getFormSubmitHandler(embedId, options))
 
+  if (options.shareGoogleAnalyticsInstance) {
+    window.addEventListener('message', (ev) => {
+      if (ev.data.type === 'form-ready') {
+        setupGoogleAnalyticsInstanceSharingFeature(iframe, embedId)
+      }
+    })
+  }
   return iframe
 }
 
