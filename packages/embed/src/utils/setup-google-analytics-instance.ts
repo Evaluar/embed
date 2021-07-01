@@ -1,15 +1,15 @@
 const GA_TYPE_MESSAGE = 'ga-client-id'
 
-export const setupGoogleAnalyticsInstanceSharingFeature = (iframe: HTMLIFrameElement, embedId: string) => {
-  const sendGaIdMessage = (gaClientId: string) => {
-    const data = { embedId, gaClientId }
-    setTimeout(() => {
-      if (iframe && iframe.contentWindow) {
-        iframe.contentWindow.postMessage({ type: GA_TYPE_MESSAGE, data }, '*')
-      }
-    }, 0)
-  }
+const sendGaIdMessage = (embedId: string, gaClientId: string, iframe: HTMLIFrameElement) => {
+  const data = { embedId, gaClientId }
+  setTimeout(() => {
+    if (iframe && iframe.contentWindow) {
+      iframe.contentWindow.postMessage({ type: GA_TYPE_MESSAGE, data }, '*')
+    }
+  }, 0)
+}
 
+export const setupGoogleAnalyticsInstance = (iframe: HTMLIFrameElement, embedId: string) => {
   let gaObject: any
 
   // Throw an error if the feature is enabled but ga is not found
@@ -18,7 +18,7 @@ export const setupGoogleAnalyticsInstanceSharingFeature = (iframe: HTMLIFrameEle
 
     gaObject((tracker: { get: (clientId: string) => string }) => {
       const gaClientId = tracker.get('clientId')
-      sendGaIdMessage(gaClientId)
+      sendGaIdMessage(embedId, gaClientId, iframe)
     })
   } catch (e) {
     // eslint-disable-next-line

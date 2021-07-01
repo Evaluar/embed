@@ -1,6 +1,12 @@
-import { ActionableOptions } from '../../base'
+import { ActionableOptions, UrlOptions } from '../../base'
+import { setupGoogleAnalyticsInstance } from '../'
 
-export const getFormReadyHandler = (embedId: string, options: ActionableOptions) => {
+export interface FormReadyOptionTypes extends ActionableOptions, UrlOptions {}
+
+export const getFormReadyHandler = (embedId: string, iframe: HTMLIFrameElement, options: FormReadyOptionTypes) => {
+  if (options.shareGoogleAnalyticsInstance) {
+    setupGoogleAnalyticsInstance(iframe, embedId)
+  }
   return getFormEventHandler('form-ready', embedId, options.onReady)
 }
 
