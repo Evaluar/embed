@@ -1,5 +1,5 @@
 import React, { CSSProperties, useEffect, useRef } from 'react'
-import { createWidget, WidgetOptions } from '@typeform/embed'
+import { createWidget, WidgetOptions } from '@evaluar/typeform-embed'
 
 import { InlineStyle } from './inline-style'
 

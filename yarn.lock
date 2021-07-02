@@ -3390,6 +3390,18 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
+"@typeform/embed-react@^1.0.3":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@typeform/embed-react/-/embed-react-1.0.6.tgz#39c32bd5b3ed3d949f621396415b1fc1c3241033"
+  integrity sha512-lZ9kfNZyBjQucL5IoudhqYMpaB14y9XgmD10UMOl+rZ4TXcodxXoLNZQnECm76XL+5aP+L5EqNj6etGTqo1ITg==
+  dependencies:
+    "@typeform/embed" "^1.10.0"
+
+"@typeform/embed@^1.10.0":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.10.1.tgz#b31ea5190b1bd11b1200a232f6ef6ac21e772e7d"
+  integrity sha512-+Ot2TdmiwDemFvBf+dvQFon8ymmlmI7pI0UuiHR91uyvFFcPAueVfg/ouDNkNiZmOoqnUWGEZnivSYdWYXP+Xg==
+
 "@typeform/eslint-config@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@typeform/eslint-config/-/eslint-config-3.0.2.tgz#8f2aac0d34f475c610495d4b1d53b5df300c8643"

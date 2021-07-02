@@ -7,7 +7,7 @@ import {
   PopoverOptions,
   createSidetab,
   SidetabOptions,
-} from '@typeform/embed'
+} from '@evaluar/typeform-embed'
 
 import { makeButtonComponent, makeInitializerComponent, Widget } from './components'
 

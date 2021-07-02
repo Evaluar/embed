@@ -1,12 +1,15 @@
 {
   "name": "@evaluar/typeform-embed",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./build/index.js",
   "types": "./types/index.d.ts",
-  "author": "Typeform",
+  "author": "",
   "license": "LGPL-3.0-only",
   "engines": {
     "node": ">=10"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "clean": "rm -rf ./build ./build-aws ./types",
