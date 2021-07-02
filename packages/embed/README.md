@@ -180,7 +180,7 @@ You can find examples for specific use-cases in our demos:
 
 Requirements:
 
-- node >= 10
+- node >= 12
 - yarn
 
 Install dependencies:
