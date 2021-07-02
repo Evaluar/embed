@@ -1,6 +1,6 @@
 const GA_TYPE_MESSAGE = 'ga-client-id'
 
-const sendGaIdMessage = (embedId: string, gaClientId: string, iframe: HTMLIFrameElement) => {
+export const sendGaIdMessage = (embedId: string, gaClientId: string, iframe: HTMLIFrameElement) => {
   const data = { embedId, gaClientId }
   setTimeout(() => {
     if (iframe && iframe.contentWindow) {
@@ -11,7 +11,6 @@ const sendGaIdMessage = (embedId: string, gaClientId: string, iframe: HTMLIFrame
 
 export const setupGoogleAnalyticsInstance = (iframe: HTMLIFrameElement, embedId: string) => {
   let gaObject: any
-
   // Throw an error if the feature is enabled but ga is not found
   try {
     gaObject = window[(window as any).GoogleAnalyticsObject]
