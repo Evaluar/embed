@@ -1,6 +1,6 @@
 {
   "name": "@evaluar/typeform-embed-react",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./build/index.js",
   "types": "./types/index.d.ts",
   "author": "Typeform",
@@ -20,7 +20,7 @@
     "release:github": "npm config set @evaluar:registry https://npm.pkg.github.com/ && npm publish"
   },
   "dependencies": {
-    "@evaluar/typeform-embed": "^1.0.2"
+    "@evaluar/typeform-embed": "^1.0.3"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
