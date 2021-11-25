@@ -19,8 +19,8 @@
     "post-release": "yarn release:github",
     "release:github": "npm config set @evaluar:registry https://npm.pkg.github.com/ && npm publish"
   },
-  "dependencies": {
-    "@evaluar/typeform-embed": "^1.0.4",
+  "dependencies": {    
+    "@evaluar/typeform-embed": "file:../embed",
     "fast-deep-equal": "^3.1.3"
   },
   "peerDependencies": {
