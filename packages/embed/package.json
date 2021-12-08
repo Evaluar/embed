@@ -3,8 +3,8 @@
   "version": "1.25.0",
   "main": "./build/index.js",
   "types": "./types/index.d.ts",
-  "author": "",
-  "license": "LGPL-3.0-only",
+  "author": "Typeform",
+  "license": "MIT",
   "homepage": "https://github.com/Typeform/embed/blob/main/packages/embed#readme",
   "repository": {
     "type": "git",
