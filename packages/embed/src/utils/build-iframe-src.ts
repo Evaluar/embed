@@ -60,16 +60,16 @@ const mapOptionsToQueryParams = (type: EmbedType, embedId: string, options: UrlO
   return { ...params, ...transitiveParams, ...tracking }
 }
 
-const getBaseUrl = (formId: string, chat: boolean = false): URL => {
+const getBaseUrl = (formId: string, chat: boolean = false, formBaseUrl: string): URL => {
   const prefix = chat ? 'c' : 'to'
-  return new URL(`${FORM_BASE_URL}/${prefix}/${formId}`)
+  return new URL(`${formBaseUrl}/${prefix}/${formId}`)
 }
 
 export const buildIframeSrc = (params: BuildIframeSrcOptions): string => {
   const { formId, type, embedId, options } = params
   const queryParams = mapOptionsToQueryParams(type, embedId, addDefaultUrlOptions(options))
-
-  const url = getBaseUrl(formId, options.chat)
+  const formBaseUrl = options.formBaseUrl || FORM_BASE_URL
+  const url = getBaseUrl(formId, options.chat, formBaseUrl)
 
   Object.entries(queryParams)
     .filter(([, paramValue]) => isDefined(paramValue))
@@ -78,7 +78,7 @@ export const buildIframeSrc = (params: BuildIframeSrcOptions): string => {
     })
 
   if (options.hidden) {
-    const tmpHashUrl = new URL(FORM_BASE_URL)
+    const tmpHashUrl = new URL(formBaseUrl)
     Object.entries(options.hidden)
       .filter(([, paramValue]) => isDefined(paramValue))
       .forEach(([paramName, paramValue]) => {

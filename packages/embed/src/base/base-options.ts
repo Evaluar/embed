@@ -18,4 +18,11 @@ export type BaseOptions = {
    * For widget this applies only on mobile (without displayOnMobile option).
    */
   keepSession?: boolean
+
+  /**
+   * Allow to load the iframe from a different domain (for example, if you are using a proxy)
+   *
+   * @type {string}
+   */
+  formBaseUrl?: string
 }

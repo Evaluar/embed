@@ -8,6 +8,18 @@ describe('build-iframe-src', () => {
       )
     })
 
+    it('should return iframe src with a custom domain', () => {
+      const formBaseUrl = 'https://my-proxy-domain.test'
+      expect(
+        buildIframeSrc({
+          formId: 'some-id',
+          type: 'widget',
+          embedId: '',
+          options: { formBaseUrl },
+        })
+      ).toMatch(formBaseUrl)
+    })
+
     it('should include default url options', () => {
       expect(buildIframeSrc({ formId: 'some-id', type: 'widget', embedId: 'embed-id', options: {} })).toBe(
         'https://form.typeform.com/to/some-id' +
