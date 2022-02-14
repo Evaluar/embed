@@ -35,11 +35,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Typeform/embed.git",
+    "url": "git@github.com:Evaluar/embed.git",
     "directory": "packages/embed-react"
   },
-  "homepage": "https://github.com/Typeform/embed/blob/main/packages/embed-react#readme",
-  "bugs": "https://github.com/Typeform/embed/issues",
+  "homepage": "https://github.com/Evaluar/embed/blob/main/packages/embed-react#readme",
+  "bugs": "https://github.com/Evaluar/embed/issues",
   "keywords": [
     "typeform",
     "embed",

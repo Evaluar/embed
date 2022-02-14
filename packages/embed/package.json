@@ -8,10 +8,10 @@
   "homepage": "https://github.com/Typeform/embed/blob/main/packages/embed#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Typeform/embed.git",
+    "url": "https://github.com/Evaluar/embed.git",
     "directory": "packages/embed"
   },
-  "bugs": "https://github.com/Typeform/embed/issues",
+  "bugs": "https://github.com/Evaluar/embed/issues",
   "keywords": [
     "typeform",
     "embed",
@@ -47,9 +47,9 @@
     "cy:visual": "yarn cypress run --spec e2e/spec/visual/**/* --browser chrome",
     "test:functional": "start-server-and-test demo 8080 cy:functional",
     "test:visual": "start-server-and-test demo 8080 cy:visual",
-    "release": "npm config set @typeform:registry https://registry.npmjs.org/ && yarn semantic-release",
+    "release": "npm config set @evaluar:registry https://registry.npmjs.org/ && yarn semantic-release",
     "post-release": "yarn release:github && yarn release:aws",
-    "release:github": "npm config set @typeform:registry https://npm.pkg.github.com/ && npm publish",
+    "release:github": "npm config set @evaluar:registry https://npm.pkg.github.com/ && npm publish",
     "release:aws": "yarn release:aws:prepare && yarn release:aws:deploy",
     "release:aws:prepare": "sh ./scripts/prepare-release.sh",
     "release:aws:deploy": "DEBUG=jarvis yarn run jarvis deploy --path ./build-aws --version next"
