@@ -3420,10 +3420,15 @@
     "@typeform/embed" "1.28.2"
     fast-deep-equal "^3.1.3"
 
-"@typeform/embed@1.28.2", "@typeform/embed@^1.23.1":
+"@typeform/embed@1.28.2":
   version "1.28.2"
   resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.28.2.tgz#fcab04c2367de104aec3017eda0de0e0a7fd3a8d"
   integrity sha512-+eyvSuw7sOzT59Eio1pWIJDEBnl4y7GPklCZF7s+Oz7pKxSEjfwiupp/oH1ol7OhhZWSoVaewa8gDSCUaB0ogw==
+
+"@typeform/embed@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-2.4.1.tgz#d530388bf4c634bdc22c2c553104af7e17e6afb9"
+  integrity sha512-MjlHZctDc71uceuPvuy6c6vY/iNW2Js7rCiFJRaC7DO8sHfVHRnFv7bGpf9p10AAD5aqrOFDLwJH9siCk/i6IA==
 
 "@typeform/eslint-config@^3.0.2":
   version "3.0.2"
