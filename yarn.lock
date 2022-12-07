@@ -3412,15 +3412,20 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@typeform/embed-react@^1.1.4":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@typeform/embed-react/-/embed-react-1.2.6.tgz#e29430ed093f74dc316b356ee80a55a1e374e3a7"
-  integrity sha512-K1SqHHo4my4taG3TtPOEBwg7OHJxG2+2KYGsQO8G4NhvUun3mhHws1KdDqu+QarA4AZaFsfMOnD2MsNN9atWtw==
+"@typeform/embed-react@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@typeform/embed-react/-/embed-react-2.7.0.tgz#969b1487062d3cd005d89b744b009f98a32fd1b3"
+  integrity sha512-6+iRJHd2OoNFAxDBiKq+7wFYB5ggFimWISJYKcarqDTtWlFaFygAPUbGSgKnc2SY8r1JtCPY6ayw1InOArrY7A==
   dependencies:
-    "@typeform/embed" "1.28.2"
+    "@typeform/embed" "2.4.1"
     fast-deep-equal "^3.1.3"
 
-"@typeform/embed@1.28.2", "@typeform/embed@^1.23.1":
+"@typeform/embed@2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-2.4.1.tgz#d530388bf4c634bdc22c2c553104af7e17e6afb9"
+  integrity sha512-MjlHZctDc71uceuPvuy6c6vY/iNW2Js7rCiFJRaC7DO8sHfVHRnFv7bGpf9p10AAD5aqrOFDLwJH9siCk/i6IA==
+
+"@typeform/embed@^1.23.1":
   version "1.28.2"
   resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.28.2.tgz#fcab04c2367de104aec3017eda0de0e0a7fd3a8d"
   integrity sha512-+eyvSuw7sOzT59Eio1pWIJDEBnl4y7GPklCZF7s+Oz7pKxSEjfwiupp/oH1ol7OhhZWSoVaewa8gDSCUaB0ogw==
